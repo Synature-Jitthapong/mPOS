@@ -1,0 +1,3 @@
+include ':synSlidingTab'
+include ':synatureCoreLibrary'
+include ':mPOS'

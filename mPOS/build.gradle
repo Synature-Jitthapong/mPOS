@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.synature.mpos"
+        minSdkVersion 14
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':synatureCoreLibrary')
+    compile project(':synSlidingTab')
+    compile files('libs/ePOS-Print.jar')
+    compile files('libs/pinchzoom.jar')
+    compile files('libs/WTAndroidJar2.jar')
+}
