@@ -17,9 +17,14 @@
     </style>
     <!-- ActionBar styles -->
     <style name="MyActionBar"
-           parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
-        <item name="android:background">@color/blue_green_light</item>
+           parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@android:color/holo_orange_dark</item>
+        <item name="android:subtitleTextStyle">@style/MyActionBar.ActionBar.TitleTextStyle</item>
     </style>
+    <style name="MyActionBar.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
     <!-- Text Qty -->
     <style name="TextQty" parent="@android:style/TextAppearance.Holo.Medium">
         <item name="android:background">@drawable/white_flat_bg</item>
